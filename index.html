@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pelajari cara kerja internet, HTTP, domain, hosting, DNS, dan browser secara mudah dan lengkap.">
+  <meta name="keywords" content="cara kerja internet, HTTP, HTTPS, domain, hosting, DNS, browser">
+  <meta name="author" content="Tama Setiawan" />
+  <title>Cara Kerja Internet - Home</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="container header-inner">
+      <h1 class="brand">Yuk, Belajar!</h1>
+
+      <nav class="navbar" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="http-https.html">HTTP/s</a></li>
+          <li><a href="domain.html">Domain</a></li>
+          <li><a href="hosting.html">Hosting</a></li>
+          <li><a href="dns.html">DNS</a></li>
+          <li><a href="browser.html">Browser</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero section">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Have You Ever Heard</h2>
+          <h1>About Internet?</h1>
+          <p>Apa sih itu Internet? dan gimana caranya bekerja?</p>
+
+          <div class="scroll-button">
+            <button class="button">
+              <span>Yuk cari tahu bareng!</span>
+              <img class="down-arrow" src="img/Arrow.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section id="intro" class="intro section">
+      <div class="container intro-upper">
+        <div class="overview">
+          <h3>Internet: Jaringan Global yang Mengubah Dunia</h3>
+          <p>Internet adalah sistem komunikasi global yang menghubungkan ribuan jaringan komputer di seluruh dunia. Sejak awal kemunculannya, internet telah berevolusi menjadi tulang punggung bagi berbagai aspek kehidupan modern, mulai dari komunikasi, bisnis, hiburan, hingga pendidikan.</p>
+        </div>
+
+        <div class="place-pict" aria-hidden="true"><img src="https://www.prysmian.com/sites/www.prysmian.com/files/2024-01/internet-banner.png" alt="Internet" /></div>
+      </div>
+
+      <div class="container intro-lower">
+        <a href="https://youtu.be/_fl7wWbV604?si=hyOflIe5QO3ue6Yq" target="_blank" rel="noopener noreferrer" class="place-vid" aria-label="Tonton video di YouTube">
+            <img src="https://img.youtube.com/vi/_fl7wWbV604/hqdefault.jpg" alt="YouTube Kok Bisa" class="video-thumb"/>
+            <div class="play-icon">▶</div>
+        </a>
+
+        <div class="definition">
+          <h3>Lebih dari Sekadar Jaringan</h3>
+          <p>Secara harfiah, internet adalah singkatan dari interconnected network atau “jaringan yang saling terhubung”. Sistem ini menggunakan sekumpulan protokol komunikasi, terutama TCP/IP, untuk memastikan semua perangkat yang terhubung dapat saling berkomunikasi dengan lancar.<br></br>
+             Penting untuk dicatat bahwa internet berbeda dengan World Wide Web (WWW). Internet adalah infrastruktur dasarnya — jaringan fisik dan protokol — sedangkan Web adalah sistem perangkat lunak yang menggunakan internet untuk menampilkan konten seperti halaman web.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEJARAH -->
+    <section id="sejarah" class="sejarah section">
+      <div class="container">
+        <h3>Dari Proyek Militer hingga Jaringan Global</h3>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="tf">1969</div>
+            <p>Awal mula internet dimulai dengan ARPANET (Advanced Research Projects Agency Network), sebuah proyek eksperimen dari Kementerian Pertahanan Amerika Serikat (ARPA). Tujuannya adalah untuk menghubungkan para peneliti dengan sumber daya komputer yang terbatas.</p>
+            <div class="picture-frame"><img src="https://pegastore.id/media/84d9ee44e457ddef7f2c4f25dc8fa865-arpanet.png" alt="ARPANET" /></div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="tf">1980-an</div>
+            <p>Penggunaan internet mulai meluas di kalangan universitas di Amerika Serikat.</p>
+            <div class="picture-frame"><img src="https://pegastore.id/media/news/artikel-1723257096.jpg" alt="Penggunaan Internet" /></div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="tf">1989</div>
+            <p>Tim Berners-Lee, seorang ilmuwan di CERN, mengembangkan World Wide Web (WWW) untuk memfasilitasi pertukaran informasi antar ilmuwan.</p>
+            <div class="picture-frame"><img src="https://catatan.nahrowi.com/wp-content/uploads/2022/03/catatan-nahrowi-berners-lee.jpg" alt="Tim Berners-Lee" /></div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="tf">1993</div>
+            <p>CERN menjadikan perangkat lunak World Wide Web menjadi domain publik, membuka jalan bagi perkembangan internet seperti yang kita kenal sekarang.</p>
+            <div class="picture-frame"><img src="https://cds.cern.ch/record/951441/files/0601028_02.jpg?subformat=icon-1440" alt="Sejarah WWW di CERN" /></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROTOKOL -->
+    <section id="protokol" class="protokol section">
+    <div class="container">
+        <h3>Klien, Server, dan Protokol</h3>
+
+        <div class="cards">
+        <!-- CARD 1 -->
+        <div class="card">
+            <div class="card-inner">
+            <div class="card-front">
+                <div class="frame-2">
+                <div class="image" aria-hidden="true"><img src="img/Client.png" alt="User membuka Internet" /></div>
+                <h4>Kamu, Si Klien</h4>
+                </div>
+            </div>
+            <div class="card-back">
+                <p>Waktu kamu buka situs di HP atau laptop, kamu kayak bilang ke internet, “Hei, aku mau lihat halaman ini dong!”</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <div class="card-inner">
+            <div class="card-front">
+                <div class="frame-2">
+                <div class="image" aria-hidden="true"><img src="img/Search.png" alt="Permintaan user mencari server tersedia" /></div>
+                <h4>Mencari Server</h4>
+                </div>
+            </div>
+            <div class="card-back">
+                <p>Permintaanmu jalan-jalan lewat internet buat nyari server; sebuah komputer besar yang nyimpen semua isi situs itu.</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <div class="card-inner">
+            <div class="card-front">
+                <div class="frame-2">
+                <div class="image" aria-hidden="true"><img src="img/Response.png" alt="Server memberikan respon" /></div>
+                <h4>Server Merespon</h4>
+                </div>
+            </div>
+            <div class="card-back">
+                <p>Begitu ketemu, server langsung ngirim balik semua bahan halaman web (kayak tulisan, gambar, dan kode) ke perangkatmu.</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card">
+            <div class="card-inner">
+            <div class="card-front">
+                <div class="frame-2">
+                <div class="image" aria-hidden="true"><img src="img/Browser.png" alt="User dapat melakukan browsing" /></div>
+                <h4>Browser Bekerja</h4>
+                </div>
+            </div>
+            <div class="card-back">
+                <p>Browser kamu yang ngerakit semua bahan tadi jadi tampilan web yang bisa kamu lihat dan klik.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- POSITIF & NEGATIF -->
+    <section id="impact" class="impact section">
+      <div class="container">
+        <h3>Dampak dari Konektivitas Tanpa Batas</h3>
+        <div class="impact-grid">
+            <div class="impact-group">
+                <h4>🌐 Sisi Positif</h4>
+                <ul class="impact-list positive">
+                <li>Menghubungkan orang di seluruh dunia dengan cepat dan mudah.</li>
+                <li>Mempermudah akses ke informasi dan pendidikan.</li>
+                <li>Mendorong inovasi di bidang teknologi dan ekonomi digital.</li>
+                <li>Mendukung kreativitas lewat media sosial, konten, dan kolaborasi global.</li>
+                </ul>
+            </div>
+
+            <div class="impact-group">
+                <h4>⚠️ Sisi Negatif</h4>
+                <ul class="impact-list negative">
+                <li>Potensi penyebaran hoaks dan disinformasi.</li>
+                <li>Kecanduan media sosial dan menurunnya produktivitas.</li>
+                <li>Ancaman terhadap privasi dan keamanan data.</li>
+                <li>Ketimpangan digital di beberapa daerah.</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KESIMPULAN -->
+    <section id="kesimpulan" class="conclusion section">
+      <div class="container">
+        <h3>Internet yang Lebih Cerdas dan Terdesentralisasi</h3>
+        <p>
+            Internet terus berkembang. Setelah era Web 1.0 (web statis satu arah) dan Web 2.0 (web interaktif berbasis media sosial), kita kini memasuki era Web 3.0. Konsep ini berfokus pada:
+        </p>
+
+        <div class="concepts">
+            <div class="concept">
+                <img src="https://berita-seru.co.id/wp-content/uploads/2025/04/schermafbeelding-2022-09-11-om-10.12.41.webp" alt="Desentralisasi" />
+                <h4>Desentralisasi</h4>
+            </div>
+            <div class="concept">
+                <img src="https://guptadeepak.com/content/images/2024/06/future-of-website-building-AI-automated.webp" alt="Kecerdasan Buatan" />
+                <h4>Kecerdasan Buatan (AI)</h4>
+            </div>
+            <div class="concept">
+                <img src="https://flur.ee/wp-content/uploads/2023/04/AdobeStock_222830059-1.png" alt="Web Semantik" />
+                <h4>Web Semantik</h4>
+            </div>
+        </div>
+        
+        <p>
+          Internet telah menjadi bagian tak terpisahkan dari kehidupan kita. Ia membawa kemudahan luar biasa dalam berkomunikasi, belajar, dan bekerja, namun juga menuntut kita untuk bijak dalam menggunakannya.
+          Dengan memahami cara kerjanya, kita jadi lebih sadar akan peluang sekaligus risikonya.
+        </p>
+      </div>
+    </section>
+
+    <!-- REKOMENDASI -->
+    <section id="rekomendasi" class="recommendation section">
+      <div class="container">
+        <div class="reco-text">
+            <h3>Yuk, Lanjut Belajar!</h3>
+            <p>Penasaran gimana internet bekerja di balik layar? Yuk lanjut ke topik berikut!</p>
+        </div>
+
+        <div class="recommendation-links">
+          <a href="http-https.html" class="reco-card">🔒 HTTP vs HTTPS</a>
+          <a href="domain.html" class="reco-card">🌍 Apa itu Domain?</a>
+          <a href="hosting.html" class="reco-card">💾 Kenalan dengan Hosting</a>
+          <a href="dns.html" class="reco-card">🧭 Fungsi DNS</a>
+          <a href="browser.html" class="reco-card">🖥️ Peran Browser</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+        <div class="container footer-inner">
+            <div class="footer-text">
+            <h3>Hubungi Lebih Lanjut</h3>
+            <p>Punya pertanyaan atau saran? Yuk, isi formulir di bawah ini!</p>
+            </div>
+
+            <form class="contact-form" action="#" method="POST">
+            <input type="text" name="name" placeholder="Nama kamu" required />
+            <input type="email" name="email" placeholder="Email kamu" required />
+            <textarea name="message" rows="4" placeholder="Tulis pesan kamu..." required></textarea>
+            <button type="submit" class="contact-btn">Kirim Pesan</button>
+            </form>
+            <p class="footer-copy">© 2025 Yuk, Belajar! — All Rights Reserved</p>
+        </div>
+    </footer>
+  </main>
+</body>
+</html>

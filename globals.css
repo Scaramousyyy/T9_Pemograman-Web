@@ -1,0 +1,51 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Coolvetica-Regular";
+  src: url("fonts/Coolvetica Rg.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(138, 56, 245, 1) 15%,
+    rgba(147, 76, 194, 1) 50%,
+    rgba(186, 76, 194, 1) 85%
+  );
+  width: 100%;
+  font-family: "Coolvetica-Regular", Helvetica, Arial, sans-serif;
+  color: var(--main);
+  min-width: 1440px;
+  min-height: 4540px;
+  position: relative;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+button:focus-visible {
+  outline: 2px solid #a54ae2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
