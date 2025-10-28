@@ -5,10 +5,12 @@ window.addEventListener("load", () => {
 });
 
 document.querySelector('.button').addEventListener('click', function() {
-  document.querySelector('#intro').scrollIntoView({
+  document.querySelector('#Internet').scrollIntoView({
     behavior: 'smooth'
   });
 });
+
+// Internet.html
 
 function expandCard(card) {
   const cards = document.querySelectorAll(".card");
@@ -24,9 +26,28 @@ document.querySelectorAll('.card').forEach(card => {
     });
   });
 
+// HTTP-HTTPS.html
+
 document.querySelectorAll(".work-header").forEach(btn => {
   btn.addEventListener("click", () => {
     const card = btn.parentElement;
     card.classList.toggle("active");
   });
 });
+
+// Domain.html
+
+document.querySelectorAll(".struct-header").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const card = btn.parentElement;
+    card.classList.toggle("active");
+  });
+});
+
+// Hosting.html
+
+
+// DNS.html
+
+
+// Browser.html

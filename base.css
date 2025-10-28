@@ -28,7 +28,7 @@ body {
   font-family: "Coolvetica-Regular", Helvetica, Arial, sans-serif;
   color: var(--main);
   min-width: 1440px;
-  min-height: 4540px;
+  min-height: max-content;
   position: relative;
   overflow-x: clip;
   scroll-behavior: smooth;
