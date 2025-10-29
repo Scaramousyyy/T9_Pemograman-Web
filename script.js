@@ -8,13 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".navbar a");
 
-  navLinks.forEach(link => {
-    link.addEventListener("click", function () {
-      navLinks.forEach(l => l.classList.remove("active"));
-      this.classList.add("active");
-    });
-  });
-
   window.addEventListener("scroll", () => {
     let current = "";
 
