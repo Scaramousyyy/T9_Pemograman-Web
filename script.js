@@ -111,6 +111,19 @@ document.querySelectorAll(".struct-header").forEach(btn => {
 
 // Hosting.html
 
+document.addEventListener("DOMContentLoaded", () => {
+  const arrows = ["arrow1", "arrow2", "arrow3"];
+  let index = 0;
+  
+  function animate() {
+    arrows.forEach(id => document.getElementById(id).classList.remove("active"));
+    document.getElementById(arrows[index]).classList.add("active");
+    index = (index + 1) % arrows.length;
+  }
+
+  animate();
+  setInterval(animate, 1200);
+});
 
 // DNS.html
 
