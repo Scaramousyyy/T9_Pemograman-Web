@@ -444,6 +444,10 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
+.dns-type .table {
+  background: rgba(211, 129, 200, 0.664);
+}
+
 .table th,
 .table td {
   padding: 18px 24px;
@@ -471,6 +475,10 @@
   color: #4b3c5a;
   width: 20%;
   text-align: left;
+}
+
+.dns-type td:first-child {
+  color: #5a325b;
 }
 
 .table td:nth-child(2),
@@ -664,6 +672,72 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.blocks {
+  display: grid;
+  grid-template-rows: 250px 250px 100px;
+  grid-template-columns: 300px 80px 300px 80px 300px;
+  width: 1060px;
+  height: 580px;
+  margin: 50px auto;
+}
+
+.block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 200px;
+  margin-left: 15px;
+}
+
+.arrows path, .arrows svg {
+  width: 50px;
+  height: 54px;
+  flex-shrink: 0;
+  fill: #fff;
+}
+
+.arrows.bottom {
+  position: absolute;
+  width: 50px;
+  height: 150px;
+  margin-left: 15px;
+  top: 125px;
+}
+
+.arrows.bottom path, .arrows.bottom svg {
+  width: 50px;
+  height: 150px;
+  flex-shrink: 0;
+  fill: #fff;
+}
+
+.node.up, .node.down {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+}
+
+.node.up p, .node.down p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.node.up { top: 0px;}
+.node.down { bottom: 0px;}
+
 .node:hover {
   transform: scale(1.05);
 }
@@ -762,9 +836,6 @@
   bottom: 0px;
   right: 418.5px;
 }
-
-
-
 
 @keyframes moveArrow {
   from { transform: translateX(0); }
