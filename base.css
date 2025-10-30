@@ -39,6 +39,30 @@ button:focus-visible {
   outline: -webkit-focus-ring-color auto 5px !important;
 }
 
+h1 {
+  font-size: 128px;
+  margin-bottom: 12px; 
+}
+
+h2 { 
+  font-size: 128px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+h4 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
 a {
   text-decoration: none;
   color: inherit;
