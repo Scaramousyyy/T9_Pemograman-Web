@@ -35,6 +35,23 @@ document.querySelector('.button').addEventListener('click', function() {
   });
 });
 
+const reveals = document.querySelectorAll(".reveal");
+
+  function revealOnScroll() {
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const revealPoint = 120; // Semakin kecil → makin cepat muncul
+
+      if (elementTop < windowHeight - revealPoint) {
+        reveals[i].classList.add("active");
+      }
+    }
+  }
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+
 // Internet.html
 
 function expandCard(card) {
